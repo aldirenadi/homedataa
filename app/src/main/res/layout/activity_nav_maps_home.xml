@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:padding="10dp"
+        android:background="@color/blue2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/telandlok"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/si_toko_1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/blue2"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:onClick="tıkla"
+                    android:layout_marginEnd="9dp"
+                    android:visibility="visible"
+                    android:background="@drawable/background_for_maps"
+                    mapbox:srcCompat="@drawable/ic_my_location_blue_24dp" />
+
+                <ImageButton
+                    android:id="@+id/ib_search"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:onClick="git"
+                    android:background="@drawable/background_for_maps"
+                    mapbox:srcCompat="@drawable/search_for_maps" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/maps"
+        android:layout_below="@+id/header"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            mapbox:mapbox_cameraTargetLat="1.360985"
+            mapbox:mapbox_cameraTargetLng="109.328500"
+            mapbox:mapbox_cameraZoom="12"
+            mapbox:mapbox_styleUrl="@string/mapbox_style_mapbox_streets">
+        </com.mapbox.mapboxsdk.maps.MapView>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:backgroundTint="@color/blue2"
+            android:text="Navigasi"
+            android:foregroundGravity="center_horizontal"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

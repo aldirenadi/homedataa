@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Fragment.MyprojectsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_below="@+id/search_header1"
+            android:background="@color/white">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/projects_recycle"
+                android:background="@drawable/bg_gradient"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_header1"
+            android:background="#FFF"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/search_jobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="11dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Cari Jasa yang Anda Butuhkan"
+                android:drawableLeft="@drawable/ic_search_blue_24dp"
+                android:textSize="16sp"
+                android:textCursorDrawable="@color/blue"
+                android:background="@drawable/search_textbox"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

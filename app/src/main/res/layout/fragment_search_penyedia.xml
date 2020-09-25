@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Fragment.SearchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_height="70dp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout_penyedia"
+                app:tabIndicatorColor="@color/white"
+                android:layout_centerVertical="true"
+                app:tabSelectedTextColor="@color/blue2"
+                android:background="@color/white"
+                app:tabTextAppearance="@style/TabLayoutTextFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Jasa" />
+            </com.google.android.material.tabs.TabLayout>
+
+
+        </RelativeLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:background="@drawable/bg_gradient"
+            android:id="@+id/pager_penyedia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

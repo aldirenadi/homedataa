@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Activity.EditProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/satu"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/left_arrow_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Lengkapi Profilmu"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="@color/blue2"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/dua"
+        android:layout_below="@id/satu"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/tiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/id_lbl_lengkapi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="ID:"
+                android:textSize="13sp"
+                android:textColor="@color/black2"/>
+            <EditText
+                android:id="@+id/id_lengkapi"
+                android:layout_below="@id/id_lbl_lengkapi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:enabled="false"
+                android:textSize="13sp"
+                android:textColor="@color/blue"/>
+
+            <TextView
+                android:id="@+id/first_name_lbl_lengkapi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_lengkapi"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Nama Depan"
+                android:textSize="14sp"
+                android:textColor="@color/black2"/>
+            <EditText
+                android:id="@+id/first_name_lengkapi"
+                android:layout_below="@id/first_name_lbl_lengkapi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:textColor="@color/black2"/>
+
+            <TextView
+                android:id="@+id/last_name_lbl_lengkapi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/first_name_lengkapi"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Nama Belakang"
+                android:textSize="14sp"
+                android:textColor="@color/black2"/>
+            <EditText
+                android:id="@+id/last_name_lengkapi"
+                android:layout_below="@id/last_name_lbl_lengkapi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:textColor="@color/black2"/>
+
+            <TextView
+                android:id="@+id/usernmae_lbl_lengkapi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/last_name_lengkapi"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Username"
+                android:textSize="14sp"
+                android:textColor="@color/black2"/>
+            <EditText
+                android:id="@+id/username_lengkapi"
+                android:layout_below="@id/usernmae_lbl_lengkapi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:textColor="@color/black2"/>
+
+            <TextView
+                android:id="@+id/job_title_lbl_lengkapi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username_lengkapi"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="No Hp/WA"
+                android:textSize="14sp"
+                android:textColor="@color/black2"/>
+
+            <EditText
+                android:id="@+id/job_title_lengkapi"
+                android:layout_below="@id/job_title_lbl_lengkapi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="number"
+                android:textSize="13sp"
+                android:textColor="@color/black2"/>
+
+            <TextView
+                android:id="@+id/addres_lbl_lengkapi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/job_title_lengkapi"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Alamat"
+                android:textSize="14sp"
+                android:textColor="@color/black2"/>
+
+            <EditText
+                android:id="@+id/address_lengkapi"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/input_textbox_bid"
+                android:textSize="13sp"
+                android:textColor="@color/black2"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:gravity="top|left"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_below="@id/addres_lbl_lengkapi"/>
+
+
+            <TextView
+                android:id="@+id/text_nik_ktp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_lengkapi"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="NIK"
+                android:textSize="14sp"
+                android:textColor="@color/black2"/>
+
+            <EditText
+                android:id="@+id/nik_ktp"
+                android:layout_below="@id/text_nik_ktp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="number"
+                android:textSize="13sp"
+                android:textColor="@color/black2"/>
+
+            <TextView
+                android:id="@+id/text_foto_ktp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nik_ktp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Foto KTP"
+                android:textSize="14sp"
+                android:textColor="@color/black2"/>
+
+            <ImageView
+                android:id="@+id/foto_ktp"
+                android:layout_below="@+id/text_foto_ktp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="151.92dp"
+                android:src="@drawable/ic_ktp_fix" />
+
+            <TextView
+                android:id="@+id/penjelasan_text_foto_ktp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/foto_ktp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Pastikan foto KTP tidak terpotong dan berada dalam bingkai"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textColor="@color/black2"/>
+
+
+            <Button
+                android:layout_below="@+id/penjelasan_text_foto_ktp"
+                android:id="@+id/save_lengkapi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentBottom="true"
+                android:text="REGISTRASI PENYEDIA JASA"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:background="@drawable/background_customer"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

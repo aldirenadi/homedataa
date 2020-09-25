@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F1AF2D</color>
+    <color name="colorPrimaryDark">#089A01</color>
+    <color name="colorAccent">#3a3a3a</color>
+    <color name="mainBackground">#056cd3</color>
+    <color name="RelativeLayout">#9DA3B3</color>
+
+    <color name="red">#AA3939</color>
+    <color name="blue">#0f7bff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteTrans">#FAFAFB</color>
+    <color name="normal_gray">#F6F7F9</color>
+    <color name="gray">#B1AFAF</color>
+
+    // new
+    <color name="green">#37c770</color>
+    <color name="greenmuda">#C2F36C</color>
+    <color name="green3">#1a535c</color>
+    <color name="red2">#e81852</color>
+    <color name="black2">#3a3a3a</color>
+    <color name="yellow">#ffdb43</color>
+    <color name="orangePrimary">#f8a404</color>
+    <color name="orangePrimaryDark">#D09726</color>
+    <color name="liteOrange">#FDB157</color>
+    <color name="aquaBlue">#677FAC</color>
+    <color name="greenTosca">#1B545D</color>
+    <color name="paleGreen">#668990</color>
+    <color name="liteRed">#ED5931</color>
+    <color name="pastelRed">#F58C74</color>
+    <color name="liteGrey">#ededed</color>
+    <color name="pastelOrange">#FDC98E</color>
+    <color name="graye2">#D5D2D2</color>
+    <color name="abuabu">#ECEBEB</color>
+    <color name="blue2">#056cd3</color>
+    <color name="blue3">#132281</color>
+
+    <color name="colorAccentRed">#D50000</color>
+    <color name="colorAccentRedGradient">#6B0000</color>
+
+    <color name="colorAccentBlue">#2962FF</color>
+    <color name="colorAccentBlueGradient">#153180</color>
+
+    <color name="colorAccentBrown">#EF6C00</color>
+    <color name="colorAccentBrownGradient">#783600</color>
+
+    <color name="colorAccentGreen">#2E7D32</color>
+    <color name="colorAccentGreenGradient">#173F19</color>
+
+    <color name="colorTitleText">#000000</color>
+    <color name="colorPayNow">#90ffffff</color>
+    <color name="colorTopBarText">#95000000</color>
+    <color name="colorSubText">#50000000</color>
+    <color name="colorHint">#20000000</color>
+    <color name="colorGreyBackground">#10000000</color>
+    <color name="colorDivider">#12000000</color>
+
+    // Mapbox Colors
+    <color name="mapboxWhite">#ffffff</color>
+    <color name="mapboxBlue">#4264fb</color>
+    <color name="mapboxGrayLight">#c6d2e1</color>
+
+
+
+    // new design
+    <color name="green_a">#42B54A</color>
+    <color name="green_b">#4F9F4E</color>
+    <color name="green_c">#83CB66</color>
+    <color name="black_a">#423743</color>
+    <color name="yellow_a">#FFFAB5</color>
+    <color name="yellow_b">#FEC767</color>
+    <color name="white_a">#FDFCF8</color>
+
+    <color name="bluePrimary">#2CAADE</color>
+    <color name="bluePrimarySoft">#80C9EE</color>
+    <color name="bluePrimaryStrong">#2CAADE</color>
+    <color name="blueStockButton">#32B1E5</color>
+    <color name="green_">#6CCE00</color>
+    <color name="red_">#D0021B</color>
+    <color name="orangeAccent">#F2994A</color>
+    <color name="whiteTrans_">#80FFFFFF</color>
+    <color name="grey">#A5A5A5</color>
+    <color name="grey_search">#33C4C4C4</color>
+    <color name="soft_blue">#F9FCFF</color>
+
+    <color name="white_natural">#f3f9fb</color>
+
+    <color name="df_transparent_black_background">#80000000</color>
+</resources>

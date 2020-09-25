@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Activity.MessageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_layout_booking"
+        android:layout_above="@+id/bottom_message_layout_booking">
+
+        <TextView
+            android:id="@+id/title_booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Buat Janji"
+            android:textAlignment="center"
+            android:textColor="@color/blue2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+
+        <GridLayout
+            android:id="@+id/bookingdetail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/title_booking"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:id="@+id/card1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="1dp">
+
+                    <Button
+                        android:id="@+id/ButtonId"
+                        android:layout_width="wrap_content"
+                        android:drawableStart="@drawable/ic_date_range_white_24dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:background="@drawable/background_booking_blue"
+                        android:textColor="@color/white"
+                        android:gravity="left|center_vertical"
+                        android:textSize="11dp"
+                        android:text="  Tanggal"
+                        android:fontFamily="@font/poppins_regular" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/jasapembersihan_btn"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="1dp">
+
+                    <Button
+                        android:id="@+id/timeP"
+                        android:drawableStart="@drawable/time_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_booking_blue"
+                        android:textColor="@color/white"
+                        android:textSize="11dp"
+                        android:padding="10dp"
+                        android:text="  Jam"
+                        android:gravity="left|center_vertical"
+                        android:fontFamily="@font/poppins_regular" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/text_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/bookingdetail"
+            android:columnCount="1"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/card_1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="1dp">
+
+                    <EditText
+                        android:id="@+id/message_Text_booking"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:textSize="17sp"
+                        android:layout_toLeftOf="@id/send_message_btn_booking"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="Keperluan untuk..."
+                        android:background="@drawable/background_booking"/>
+
+                    <ImageView
+                        android:id="@+id/send_message_btn_booking"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:padding="10dp"
+                        android:layout_below="@+id/bookingdetail"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bulat_for_chat"
+                        android:src="@drawable/ic_sent_btn" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Atur Tanggal dan Jam Pertemuan"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/text_layout"
+            android:layout_centerInParent="true"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textColor="@color/black2"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="350dp"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/tanggal"
+            android:id="@+id/recycle_chat_booking"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_message_layout_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_layout_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/blue2">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_chat_booking"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/all_ic_boy"
+            app:civ_circle_background_color="@color/white"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/white"
+            android:layout_marginStart="40dp" />
+
+        <TextView
+            android:id="@+id/name_user_chat_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/profile_image_chat_booking"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/review_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Review"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/back_message_booking"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/left_arrow_white"
+            tools:ignore="VectorDrawableCompat" />
+    </RelativeLayout>
+
+</RelativeLayout>

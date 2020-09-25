@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/projectID_pencari"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/searchID_pencari"
+        android:icon="@drawable/search"
+        android:title="Cari" />
+
+    <item
+        android:id="@+id/msgID_pencari"
+        android:icon="@drawable/ic_message_square"
+        android:title="Pesan" />
+    <item
+        android:id="@+id/accountID_pencari"
+        android:icon="@drawable/ic_account"
+        android:title="Profil" />
+</menu>

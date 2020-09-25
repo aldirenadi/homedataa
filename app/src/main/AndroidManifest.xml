@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aldi.dacari">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_fix_bulat"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo_fix_bulat"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.EditProfileActivity" />
+        <activity android:name=".Activity.ProjectActivity" />
+        <activity android:name=".Activity.Project_editActivity" />
+
+        <activity
+            android:name=".Activity.ResetPasswordActivity"
+            android:parentActivityName=".Activity.LoginActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.LoginActivity_pencari" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.RegisterActivity_pencari" />
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.ImageViewActivity" />
+        <activity android:name=".Activity.LengkapiProfileActivity" />
+        <activity android:name=".Activity.LengkapiProfileActivity_pencari" />
+        <activity android:name=".Activity.MessageActivity" />
+        <activity android:name=".Activity.MenuActivity" />
+        <activity android:name=".Activity.NavMapsHomeActivity" />
+        <activity android:name=".Activity.NavMapsListActivity" />
+        <activity android:name=".Activity.ListActivity" />
+        <activity android:name=".Activity.TentangActivity" />
+        <activity android:name=".Activity.LaundryActivity" />
+        <activity android:name=".Activity.ElektronikActivity" />
+        <activity android:name=".Activity.TukangharianActivity" />
+        <activity android:name=".Activity.TukangledengActivity" />
+        <activity android:name=".Activity.JpActivity" />
+        <activity android:name=".Activity.SacActivity" />
+        <activity android:name=".Activity.ReviewActivity" />
+        <activity android:name=".Activity.BookingActivity" />
+        <activity android:name=".Activity.BookingActivity_penyedia" />
+        <activity android:name=".Activity.HomeActivity" />
+        <activity android:name=".Activity.HomeActivity_pencari" />
+        <activity android:name=".Activity.Splash_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity"></activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service android:name=".notifications.FirebaseService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase INSTANCE_ID_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name=".notifications.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

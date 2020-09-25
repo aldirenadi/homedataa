@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/project_title_penyedia"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Project Title"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black2"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:focusable="auto"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:focusableInTouchMode="true"
+            android:ellipsize="marquee"/>
+
+        <TextView
+            android:id="@+id/period_project_penyedia"
+            android:layout_below="@+id/project_title_penyedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_extralight"
+            android:text="closes in n days"
+            android:textSize="12sp"
+            android:textColor="@color/black2" />
+
+
+        <GridLayout
+            android:layout_below="@+id/period_project_penyedia"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:id="@+id/card1">
+
+                <ImageView
+                    android:id="@+id/image_post_upload_penyedia"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:src="@color/black2"
+                    android:gravity="center"
+                    android:padding="1dp">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detal_job"
+                android:layout_marginLeft="5dp"
+                android:layout_height="150dp"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:padding="1dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_work_white_24dp"/>
+
+                        <TextView
+                            android:id="@+id/typep_penyedia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Servis Elektronik"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black2"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:padding="1dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_rupiah"/>
+
+                        <TextView
+                            android:id="@+id/cost_penyedia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_marginLeft="5dp"
+                            android:text="Rp 100.000"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black2"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:padding="1dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_directions_run_black_24dp"/>
+
+                        <TextView
+                            android:id="@+id/pengalaman_kerja_penyedia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_marginLeft="5dp"
+                            android:text="1 tahun"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black2"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.TentangActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/left_arrow_blue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/back"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:text="Tentang Kami"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/blue2"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tentang_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:id="@+id/tv_justified_paragraph1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:background="@color/white"
+                        android:text="@string/tentang_paragraf1"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black2"
+                        android:textSize="15sp" />
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:id="@+id/tv_justified_paragraph2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/tentang_paragraf2"
+                        android:textColor="@color/black2"
+                        android:textSize="15sp" />
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:id="@+id/tv_justified_paragraph3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="5dp"
+                        android:text="@string/tentang_paragraf3"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black2"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        //
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_below="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/informasi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/blue2"
+                android:gravity="left"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Informasi Layanan" />
+
+        </RelativeLayout>
+
+        //
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_below="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/wa_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:gravity="left"
+                    android:background="@color/abuabu"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/wa_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/ic_whatsapp" />
+
+                    <TextView
+                        android:id="@+id/wa_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/abuabu"
+                        android:textColor="@color/black2"
+                        android:paddingLeft="5dp"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0878-4209-5877" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout4"
+            android:layout_below="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/email_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:gravity="left"
+                    android:background="@color/abuabu"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/email_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/ic_gmail" />
+
+                    <TextView
+                        android:id="@+id/email_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black2"
+                        android:background="@color/abuabu"
+                        android:paddingLeft="5dp"
+                        android:gravity="center"
+                        android:textSize="13dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="homedaptk@gmail.com" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_below="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/owner_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/blue2"
+                android:gravity="left"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Founder Homeda" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout6"
+            android:layout_below="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aldi_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/abuabu"
+                    android:padding="15dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/aldi_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/aldi" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="@color/abuabu"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:paddingLeft="5dp"
+                            android:text="Aldi Renadi"
+                            android:textColor="@color/black2"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/cv_title_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:paddingLeft="5dp"
+                            android:text="Mahasiswa Program Studi Teknik Informatika"
+                            android:textColor="@color/black2"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/cv_title_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:paddingLeft="5dp"
+                            android:text="Politeknik Negeri Pontianak"
+                            android:textColor="@color/black2"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

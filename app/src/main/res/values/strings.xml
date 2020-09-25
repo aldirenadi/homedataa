@@ -1,0 +1,48 @@
+<resources>
+
+    <string-array name="project_type">
+        <item>Website and IT</item>
+        <item>Mobile</item>
+        <item>Art and Design</item>
+        <item>Data Entry</item>
+        <item>Software Dev</item>
+        <item>Writing</item>
+        <item>Business</item>
+        <item>Sales</item>
+        <item>Contest</item>
+        <item>Local Jobs</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="app_name">home da</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">username</string>
+    <string name="hello_there">Hello There!</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me?</string>
+    <string name="log_in">Log In</string>
+    <string name="forget_password">Forget your password?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="you_are_not_a_member">Belum Pernah Mendaftar? </string>
+    <string name="register">REGISTRASI</string>
+    <string name="type_a_message">Type a message...</string>
+    <string name="nothing">Jelaskan Deskripsi</string>
+    <string name="title_nothing">Title </string>
+
+    // MAP
+    <string name="access_token">pk.eyJ1IjoidGh1dGh1a2FkIiwiYSI6ImNqbjJ3cXliNTI4cTIza3FsemVia2g5MmQifQ.TznQj7VpcSm0uNq5CQR09g</string>
+    <string name="start_navigating">Start Navigating</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="tentang_paragraf1">     Perkembangan teknologi informasi akhir-akhir ini telah berkembang dengan pesat dan tidak bisa dipisahkan dari kehidupan sehari-hari. Teknologi tersebut semakin ditunjang dengan adanya internet, dimana dapat dipadukan menjadi sebuah aplikasi berbasis android. Kemudahan dalam mengakses merupakan salah satu keunggulan aplikasi berbasis android, dimana pengguna tidak harus bertatap muka untuk memperoleh informasi yang diperlukan. Fenomena aplikasi android ini harus di cermati dengan baik, terutama untuk mempermudah segala aktifitas sehari hari khususnya pemesanan jasa online yang mudah dan cepat.</string>
+    <string name="tentang_paragraf2">     Di kota Pontianak, pelayanan jasa yang menggunakan aplikasi berbasis android belum sepenuhnya memenuhi kebutuhan di lingkungan masyarakat. Sebagian masyarakat menemukan kesulitan jika ada kerusakan yang terjadi di rumah seperti kusen pintu yang patah, atap maupun plafon yang bocor, AC rusak dan masalah lainnya. Tentunya kita akan kebingungan mengatasi masalah tersebut, karena juga di sibukkan dengan pekerjaan dan waktu yang dimiliki sangat terbatas. Biasanya kita menghubungi atau menanyakan kepada kenalan atau orang terdekat untuk membantu menyelesaikan masalah tersebut. Namun jika tidak ada, kita akan mencari informasinya di media sosial Facebook atau Instagram. Sehinga muncul beberapa masalah antara lain pencarian calon teknisi yang memakan waktu yang cukup lama, sulit menemukan kesesuaian lokasi dan juga tidak dapat mengetahui track-record dari teknisi yang akan di pesan, sehingga kesulitan untuk mendapatkan pelayanan yang terbaik.</string>
+    <string name="tentang_paragraf3">     Untuk menyelesaikan permasalahan pencarian dan pemesanan jasa, maka diperlukan Aplikasi berbasis Android sebagai media untuk memudahkan masyarakat ketika mencari dan memesan jasa yang dibutuhkan. Yang nantinya masyarakat akan dipermudah dengan informasi detail mengenai jasa tersebut seperti adanya informasi nama pekerjaan, deskripsi, kategori, lokasi dan harga penawaran. Selain itu perlu adanya fitur chatting agar bisa saling terhubung dan berkomunikasi antar dua arah.</string>
+
+</resources>

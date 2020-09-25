@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Activity.MessageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_Alamat_layout_booking_penyedia"
+        android:layout_above="@+id/bottom_message_layout_booking_penyedia">
+
+        <TextView
+            android:id="@+id/title_booking_penyedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Booking Jasa"
+            android:textAlignment="center"
+            android:textColor="@color/blue2"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <GridLayout
+            android:id="@+id/bookingdetail_penyedia"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/title_booking_penyedia"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/card1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="1dp">
+
+                    <Button
+                        android:id="@+id/ButtonOke_penyedia"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_booking_abuabu"
+                        android:textColor="@color/black2"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="DI TERIMA" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/jasapembersihan_btn"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="1dp">
+
+                    <Button
+                        android:id="@+id/ButtonTidak_penyedia"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_booking_abuabu"
+                        android:textColor="@color/black2"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="DI TOLAK" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+        <GridLayout
+            android:id="@+id/bookingdetail_penyedia_2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-10dp"
+            android:layout_below="@id/bookingdetail_penyedia"
+            android:columnCount="3"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/card_1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="1dp">
+
+                    <Button
+                        android:id="@+id/ButtonOtw_penyedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_booking_abuabu"
+                        android:textColor="@color/black2"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="OTW" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/card_2"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="1dp">
+
+                    <Button
+                        android:id="@+id/ButtonKerja_penyedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_booking_abuabu"
+                        android:textColor="@color/black2"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Kerja" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/card_3"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="1dp">
+
+                    <Button
+                        android:id="@+id/ButtonSelesai_penyedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_booking_abuabu"
+                        android:textColor="@color/black2"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Selesai" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+
+        <TextView
+            android:id="@+id/tanggal_penyedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Ingat! Tanggal dan Jam pertemuan"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/bookingdetail_penyedia_2"
+            android:layout_centerInParent="true"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:textColor="@color/black2"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="350dp"
+            android:paddingBottom="3dp"
+            android:layout_below="@+id/tanggal_penyedia"
+            android:id="@+id/recycle_chat_booking_penyedia"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_message_layout_booking_penyedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header_layout_booking_penyedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/blue2">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_chat_booking_penyedia"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/all_ic_boy"
+            app:civ_circle_background_color="@color/white"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/white"
+            android:layout_marginStart="40dp" />
+
+        <TextView
+            android:id="@+id/name_user_chat_booking_penyedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/profile_image_chat_booking_penyedia"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/telephon_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_local_phone_white_24dp"/>
+
+        <ImageView
+            android:id="@+id/back_message_booking_penyedia"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/left_arrow_white"
+            tools:ignore="VectorDrawableCompat" />
+    </RelativeLayout>
+
+    //
+    <RelativeLayout
+        android:id="@+id/header_Alamat_layout_booking_penyedia"
+        android:layout_below="@+id/header_layout_booking_penyedia"
+        android:layout_marginTop="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/blue2">
+
+        <TextView
+            android:id="@+id/alamat_chat_booking_penyedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Alamat Lengkap"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:focusable="auto"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:focusableInTouchMode="true"
+            android:ellipsize="marquee"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

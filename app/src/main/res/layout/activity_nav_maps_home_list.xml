@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue2">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:padding="10dp"
+        android:background="@color/blue2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/left_arrow_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Rekomendasi Toko"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/header"
+        android:background="@drawable/project_body"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_toko_1"
+            android:background="@color/abuabu"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            //toko1
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_1"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tanggal_job"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:background="@color/white_a"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/nama_toko_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Toko Bangunan Sinar Karya"
+                                android:fontFamily="@font/poppins_medium"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_toRightOf="@+id/profil"
+                                android:textSize="12sp"
+                                android:textColor="#393e46"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tipe_toko_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Toko Bangunan"
+                                android:fontFamily="@font/poppins_light"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@+id/profil"
+                                android:textSize="11sp"
+                                android:textColor="#393e46"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/alamat_toko_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jl. Karya Baru No.88, Parit Tokaya, Kec. Pontianak Sel., Kota Pontianak, Kalimantan Barat 78115"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_toRightOf="@+id/profil"
+                                android:textSize="11dp"
+                                android:textColor="#393e46"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_1"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:onClick="onClick"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Lokasi"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //toko2
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_2"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/detail_toko"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@color/white_a"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_toko_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Bangunan Ellin"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="12sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tipe_toko_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Bangunan"
+                            android:fontFamily="@font/poppins_light"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+
+                        <TextView
+                            android:id="@+id/alamat_toko_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jl. H. Rais A. Rachman No.422, Sungai Jawi Dalam, Kec. Pontianak Bar., Kota Pontianak, Kalimantan Barat 78115"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11dp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko_2"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_2"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:fontFamily="@font/poppins_medium"
+                        android:onClick="onClick"
+                        android:text="Lokasi"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //toko3
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_3"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/detail_toko_2"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@color/white_a"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_toko_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Bangunan Bintang Terang"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="12sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tipe_toko_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Bangunan"
+                            android:fontFamily="@font/poppins_light"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/alamat_toko_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jl. Urai Bawadi No.19 A, Sungai Bangkong, Kec. Pontianak Kota, Kota Pontianak, Kalimantan Barat 78116"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11dp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko_3"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_3"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_3"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_3"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:fontFamily="@font/poppins_medium"
+                        android:onClick="onClick"
+                        android:text="Lokasi"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //toko4
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_4"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/detail_toko_3"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@color/white_a"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_toko_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Bangunan dan Showroom Keramik Telaga Baru"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="12sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tipe_toko_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Bangunan"
+                            android:fontFamily="@font/poppins_light"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/alamat_toko_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JL. Dr. Wahidin S, No. 150, Sungai Jawi, Kec. Pontianak Kota, Kota Pontianak, Kalimantan Barat 78114"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11dp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko_4"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_4"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_4"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_4"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:fontFamily="@font/poppins_medium"
+                        android:onClick="onClick"
+                        android:text="Lokasi"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //toko5
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_5"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/detail_toko_4"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@color/white_a"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_toko_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Bangunan Ace"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="12sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tipe_toko_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Bangunan"
+                            android:fontFamily="@font/poppins_light"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/alamat_toko_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Komp. Pontianak Mall, Blok A, Jl. Gusti Sulung Lelanang No.7, Darat Sekip, Kec. Pontianak Kota, Kota Pontianak, Kalimantan Barat 78243"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11dp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko_5"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_5"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_5"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_5"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:fontFamily="@font/poppins_medium"
+                        android:onClick="onClick"
+                        android:text="Lokasi"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //toko6
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_6"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/detail_toko_5"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@color/white_a"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_toko_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Bangunan Gelora Bangunan"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="12sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tipe_toko_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Bangunan"
+                            android:fontFamily="@font/poppins_light"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/alamat_toko_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jl. Merdeka Barat No.515 A, Tengah, Kec. Pontianak Kota, Kota Pontianak,"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11dp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko_6"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_6"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_6"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_6"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Lokasi"
+                        android:onClick="onClick"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //toko7
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_7"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/detail_toko_6"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@color/white_a"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_toko_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Multi Depo"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="12sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tipe_toko_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Elektronik"
+                            android:fontFamily="@font/poppins_light"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/alamat_toko_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jl. Suprapto, Benua Melayu Darat, Pontianak Selatan, Benua Melayu Darat, Kec. Pontianak Sel., Kota Pontianak,"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11dp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko_7"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_7"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_7"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_7"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Lokasi"
+                        android:onClick="onClick"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //toko8
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_8"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/detail_toko_7"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@color/white_a"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_toko_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Elektronik Jaya"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="12sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tipe_toko_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Elektronik"
+                            android:fontFamily="@font/poppins_light"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/alamat_toko_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ps. Kemuning, Jl. Prof. M.Yamin, Sungai Bangkong, Kec. Pontianak Kota, Kota Pontianak,"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11dp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko_8"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_8"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_8"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_8"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Lokasi"
+                        android:onClick="onClick"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //toko9
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_9"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/detail_toko_8"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@color/white_a"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_toko_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Duta Eterna Electronic"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="12sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tipe_toko_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Elektronik"
+                            android:fontFamily="@font/poppins_light"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/alamat_toko_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jl. Putri Candramidi, Sungai Bangkong, Kec. Pontianak Kota, Kota Pontianak,"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11dp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko_9"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_9"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_9"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_9"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Lokasi"
+                        android:onClick="onClick"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //toko10
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_10"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/detail_toko_9"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@color/white_a"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_toko_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jawi Elektronik"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="12sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tipe_toko_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Elektronik"
+                            android:fontFamily="@font/poppins_light"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/alamat_toko_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jl. H. Rais A. Rachman No.88 A, Sungai Jawi Dalam, Kec. Pontianak Bar., Kota Pontianak, "
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11dp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko_10"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_10"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_10"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_10"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Lokasi"
+                        android:onClick="onClick"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //toko11
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_11"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/detail_toko_10"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@color/white_a"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_toko_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Glaen Elektronik / Glaen Indo Niaga"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="12sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tipe_toko_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Elektronik"
+                            android:fontFamily="@font/poppins_light"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/alamat_toko_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jl. Purnama 1 No.4B, Parit Tokaya, Kec. Pontianak Sel., Kota Pontianak,"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11dp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko_11"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_11"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_11"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_11"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Lokasi"
+                        android:onClick="onClick"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //toko12
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_12"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/detail_toko_11"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@color/white_a"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_toko_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ajun Elektronik"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="12sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tipe_toko_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Elektronik"
+                            android:fontFamily="@font/poppins_light"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/alamat_toko_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jl. Urai Bawadi No.24, Sungai Bangkong, Kec. Pontianak Kota, Kota Pontianak,"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11dp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko_12"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_12"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_12"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_12"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Lokasi"
+                        android:onClick="onClick"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //toko13
+            <androidx.cardview.widget.CardView
+                android:id="@+id/si_toko_13"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/detail_toko_12"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@color/white_a"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_toko_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lina Perabotan"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="12sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tipe_toko_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Toko Perabotan"
+                            android:fontFamily="@font/poppins_light"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11sp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/alamat_toko_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gg. Mandala, Tj. Hulu, Kec. Pontianak Tim., Kota Pontianak, "
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@+id/profil"
+                            android:textSize="11dp"
+                            android:textColor="#393e46"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_toko_13"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/si_toko_13"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:background="@color/white_a"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/tel_toko_13"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Telepon"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/lokasi_toko_13"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="1dp"
+                        android:layout_toRightOf="@+id/nama"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Lokasi"
+                        android:onClick="onClick"
+                        android:textColor="@color/blue2"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

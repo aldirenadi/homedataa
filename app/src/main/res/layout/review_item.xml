@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:layout_goneMarginBottom="5dp"
+    android:padding="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/back_msg_left">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/all_ic_boy"
+        android:layout_centerVertical="true"
+        android:id="@+id/profile_img_booking" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profile_img_booking"
+        android:layout_toEndOf="@id/profile_img_booking"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="username"
+            android:id="@+id/username_browse_booking"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black2"
+            android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_review_left"
+                android:layout_toRightOf="@id/profile_img_booking"
+                android:layout_toEndOf="@id/profile_img_booking"
+                android:padding="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Rating: 4.0"
+                    android:padding="1dp"
+                    android:id="@+id/review_browse_booking"
+                    android:foregroundGravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/image_review"
+                    android:layout_width="15dp"
+                    android:padding="1dp"
+                    android:foregroundGravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_star_orange_24dp"/>
+
+
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

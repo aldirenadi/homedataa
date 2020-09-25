@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_blue"
+    tools:context=".Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp">
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_are_not_a_member"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="center"
+            android:textColor="@color/black2"
+            android:layout_marginBottom="2dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_toRightOf="@+id/textView6"
+            android:id="@+id/register_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/register"
+            android:textColor="@color/blue2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/forget_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mid_layout_login"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_regular"
+        android:text="lupa kata sandi?"
+        android:textAlignment="center"
+        android:textColor="@color/blue2"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:id="@+id/atas_"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/soft_blue"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/back_ID"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/left_arrow_blue"
+            tools:ignore="VectorDrawableCompat" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/basabasi"
+        android:layout_below="@id/atas_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="35dp"
+            android:text="Homeda"
+            android:textColor="@color/blue2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView3"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Membantu Mempromosikan Jasa Anda"
+            android:textColor="@color/blue2"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mid_layout_login"
+        android:layout_below="@+id/basabasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/user_reg_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_txt_edit"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/gray"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/blue2"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/pass_reg_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/user_reg_ID"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/login_txt_edit"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="kata sandi"
+            android:inputType="textPassword"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/blue2"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/remember_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pass_reg_ID"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="ingatkan saya"
+            android:textColor="@color/blue2"
+            android:textColorHighlight="@color/blue2"
+            android:textColorLink="@color/blue2"
+            android:textCursorDrawable="@color/blue2" />
+
+        <Button
+            android:id="@+id/signupbtn_reg_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/remember_ID"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_customer"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="LOGIN PENYEDIA"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</RelativeLayout>

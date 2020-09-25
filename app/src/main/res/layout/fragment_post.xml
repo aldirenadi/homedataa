@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Fragment.PostFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Spesifikasi Teknisi"
+                android:textSize="20dp"
+                android:textColor="@color/blue2"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/body"
+            android:padding="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Usaha Anda"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black2" />
+
+            <EditText
+                android:id="@+id/title_txt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/title"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:gravity="top|left"
+                android:textColor="@color/black2"
+                android:textCursorDrawable="@color/blue"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Silahkan isi nama usaha anda"/>
+
+            // 1
+
+            //---
+
+            <TextView
+                android:id="@+id/project_type"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black2"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Kategori"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/type_spinner"
+                android:background="@color/blue2"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:layout_below="@id/project_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/type_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black2"
+                android:text="Deskripsi Pekerjaan"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/description_txt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/description"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:gravity="top|left"
+                android:textColor="@color/black2"
+                android:textCursorDrawable="@color/blue"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Jelaskan Pekerjaan Anda Secara Detail"/>
+
+            <TextView
+                android:id="@+id/budget"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/description_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black2"
+                android:text="Kisaran Bayaran (per Rp 100.000)"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/hari"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/textView_seekbar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black2"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Pengalaman"
+                android:textSize="14sp" />
+
+            <me.bendik.simplerangeview.SimpleRangeView
+                android:id="@+id/seekbar_seekbar_range"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/budget"
+                app:count="11"
+                app:start="1"
+                app:end="10"
+                app:movable="true"
+                app:showFixedLine="true"
+                app:startFixed="1"
+                app:endFixed="10"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/textView_seekbar_layout"
+                android:layout_below="@+id/seekbar_seekbar_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Rp "
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/textView_seekbar_bayaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="100.000"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:id="@+id/pengalaman_type_seekbar"
+                android:layout_below="@id/hari"
+                android:max="15"
+                android:progress="0"
+                android:progressDrawable="@drawable/track"
+                android:thumb="@drawable/thumb"
+                android:indeterminate="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_seekbar"
+                android:layout_below="@+id/pengalaman_type_seekbar"
+                android:text="0 Tahun"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/skill"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/text_seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black2"
+                android:text="Layanan Tambahan"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp" />
+
+
+
+            <EditText
+                android:id="@+id/skill_txt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/skill"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:gravity="top|left"
+                android:textColor="@color/black2"
+                android:textCursorDrawable="@color/blue"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Masukkan Layanan Tambahan"/>
+
+
+            <TextView
+                android:id="@+id/image_title"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/skill_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black2"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Tambahkan gambar pamflet / promosi"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/addImageBtn"
+                android:layout_below="@+id/image_title"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:maxHeight="300dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.033"
+                android:background="@drawable/add_images_button_new"
+                android:visibility="visible"/>
+
+            <ProgressBar
+                android:layout_below="@+id/image_title"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/postProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.224" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/body"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/post_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="UPLOAD POSTINGAN"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@drawable/background_customer"/>
+
+
+        </ScrollView>
+    </RelativeLayout>
+</ScrollView>

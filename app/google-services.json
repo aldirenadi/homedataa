@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "287412958915",
+    "firebase_url": "https://dacari-7cc9e.firebaseio.com",
+    "project_id": "dacari-7cc9e",
+    "storage_bucket": "dacari-7cc9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287412958915:android:8024bc56e21e09f8ead476",
+        "android_client_info": {
+          "package_name": "com.aldi.dacari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287412958915-729gjhkll8f3j40tib3bfk5el9i4q8p9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aldi.dacari",
+            "certificate_hash": "5247297a6a163bbf53cbab1f2e65ec5d3f37f031"
+          }
+        },
+        {
+          "client_id": "287412958915-tnkadqapu38ie47dls5k1v2mlrkmh43m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuGhDSo7AaPrbMs6fgEn2VKyX3jn6z4Hg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287412958915-tnkadqapu38ie47dls5k1v2mlrkmh43m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

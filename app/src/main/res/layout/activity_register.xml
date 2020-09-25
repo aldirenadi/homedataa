@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_blue"
+    tools:context=".Activity.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Sudah punya akun?"
+            android:textColor="@color/black2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/loginlink_ID"
+            android:layout_toRightOf="@id/textView8"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/blue2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/soft_blue"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/back_ID"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/left_arrow_blue"
+            tools:ignore="VectorDrawableCompat" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/basabasi"
+        android:layout_below="@id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="35dp"
+            android:text="Homeda"
+            android:textColor="@color/blue2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15sp"
+            android:text="PENYEDIA JASA"
+            android:textColor="@color/blue2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView2"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Membantu mempromosikan Jasa Anda"
+            android:textColor="@color/blue2"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/basabasi"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <EditText
+            android:id="@+id/user_reg_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_txt_edit"
+            android:hint="username"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/blue2"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/email_reg_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/user_reg_ID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_txt_edit"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/blue2"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/hp_reg_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/email_reg_ID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_txt_edit"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="nomor hp"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/blue2"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/pass_reg_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/hp_reg_ID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_txt_edit"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="kata sandi"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/blue2"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/pass_reg_ID2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/pass_reg_ID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_txt_edit"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="konfirmasi kata sandi"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/blue2"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/signupbtn_reg_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/pass_reg_ID2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_customer"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Lengkapi Data Profil"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/postProgressBar_register"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.224" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
